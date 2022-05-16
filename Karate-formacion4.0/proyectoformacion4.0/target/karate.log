@@ -1,0 +1,63 @@
+13:51:42.965 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.1.0
+13:51:44.016 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:47.710 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:47.897 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/Login.feature')
+13:51:48.758 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jarv078@gmail.com","password":"123qwe"}}
+
+13:51:49.668 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 903
+1 < 200
+1 < Date: Thu, 05 May 2022 18:51:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"153-kNJwUQncJ+CZqtBYq1lJenE5W+I"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pXzYJh3TXOoPsOBhBFVICysidnUb7KqmHKCv%2FbIZVMdlBZ2ZdH4LiU5n7dBwgAZyZlFD0BhjgcafQ3emBWkp4PpRBGIRQISiXEehyX5zHQIGhk2xJSQL56XdKlWadBbm1%2Fr1"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 706bab712af909ea-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"jarv078@gmail.com","username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTE3NzY3MDksImV4cCI6MTY1Njk2MDcwOX0.tdQN3hdtNs1YjvBTNNZhfEclP1FFOvCg0-2JCS5nWu4"}}
+13:51:49.697 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTE3NzY3MDksImV4cCI6MTY1Njk2MDcwOX0.tdQN3hdtNs1YjvBTNNZhfEclP1FFOvCg0-2JCS5nWu4 
+13:51:49.709 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/Login.feature')
+13:51:49.736 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 87
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"pepito2.perez2@test2.test2","password":"12345","username":"pepito2"}}
+
+13:51:50.174 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 200
+1 < Date: Thu, 05 May 2022 18:51:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"163-pa6mmlLG5ZlKKKrEIsjSBwedLwE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wbowLKhqlJeNRZQV7%2B%2BP0GJpgaB%2BHSO6urbWBZHS75JoUCUkN8rHfz0ninxokL4IbkaSd6auc1rmC4XWNi8%2BTrT75NcDGYKx8QCKuoi6ZX798gogCaDKSHoNmiO7GZP0dz0A"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 706bab74780f6de3-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"pepito2.perez2@test2.test2","username":"pepito2","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGl0bzIucGVyZXoyQHRlc3QyLnRlc3QyIiwidXNlcm5hbWUiOiJwZXBpdG8yIiwiaWF0IjoxNjUxNzc2NzA5LCJleHAiOjE2NTY5NjA3MDl9.rm6zcE_s2ShlUNNyOlZWfkkxFsznGifeS52Kis_1hik"}}
+13:51:52.561 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/features/SingUp.feature

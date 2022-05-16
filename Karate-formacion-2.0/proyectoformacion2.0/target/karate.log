@@ -1,0 +1,165 @@
+13:27:21.732 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.1.0
+13:27:22.138 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:27:22.181 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 16
+13:27:25.830 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:26.469 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/Login.feature')
+13:27:27.588 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"jarv078@gmail.com","password":"123qwe"}}
+
+13:27:28.746 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 1154
+1 < 200
+1 < Date: Mon, 09 May 2022 18:27:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"153-vqF25atB+XTbLtON7DNqssfjOUk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BynP%2FITmiS%2F27sCqvIDbb9bmDBD8Ky1fgZSOkA9FTIdNi4U39SGQvQbT2m8kIpnfVii%2FWo5BdFaQVgXZYU%2FrDK%2B%2FxUHpoLVvooIbwv4bpJLJbdfzuqOGd%2FD5kI1TizaNYfnW"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 708c7d47aa970321-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"jarv078@gmail.com","username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTIxMjA4NDgsImV4cCI6MTY1NzMwNDg0OH0.4T-W_Jp0E9bv3_4Nv23Ew22hno9AC7iDvMEKeWq6vBU"}}
+13:27:28.767 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/Login.feature')
+13:27:29.307 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTIxMjA4NDgsImV4cCI6MTY1NzMwNDg0OH0.4T-W_Jp0E9bv3_4Nv23Ew22hno9AC7iDvMEKeWq6vBU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 154
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"Devan Seaworth","description":"Yunkai","body":"Knowledge could be more valuable than gold, more deadly than a dagger."}}
+
+13:27:29.603 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 296
+1 < 200
+1 < Date: Mon, 09 May 2022 18:27:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"1a5-IvBR1ow1VhFWo1zqV+CCAqMTvY0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=v%2BEUy56WGfk%2Bynip4Qj4MI%2B%2B6K1O2qEprlfNUUB570Lggdbszspz0AngBP8ODZezW3uPZMPCxBpU11uafJLFWkA13oeZnlbunqJNDW0vAZWq63KpsxhXSaJptgUKZVmZqVCX"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 708c7d4daca802b2-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"Devan-Seaworth-3913","title":"Devan Seaworth","description":"Yunkai","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2022-05-09T18:27:29.604Z","updatedAt":"2022-05-09T18:27:29.604Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+13:27:29.646 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - [print] {
+  "article": {
+    "slug": "Devan-Seaworth-3913",
+    "title": "Devan Seaworth",
+    "description": "Yunkai",
+    "body": "Knowledge could be more valuable than gold, more deadly than a dagger.",
+    "tagList": [
+    ],
+    "createdAt": "2022-05-09T18:27:29.604Z",
+    "updatedAt": "2022-05-09T18:27:29.604Z",
+    "favorited": false,
+    "favoritesCount": 0,
+    "author": {
+      "username": "johantest",
+      "bio": null,
+      "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+      "following": false
+    }
+  }
+}
+ 
+13:27:29.664 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTIxMjA4NDgsImV4cCI6MTY1NzMwNDg0OH0.4T-W_Jp0E9bv3_4Nv23Ew22hno9AC7iDvMEKeWq6vBU
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:27:30.221 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 555
+2 < 200
+2 < Date: Mon, 09 May 2022 18:27:30 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"d62-FKKN31Ps35IJtn7sgulGqBS3g3U"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vG%2Fyqt4N7fr0%2FFP8OCvKmMqn3NCYVWQWjHl4NvEuJC5pMvqlAx2uugjA%2BE78HXN0wOeS%2F6%2BGRLrGL80NsLn3yDhZtS%2B109VpVRL2w%2FU3vYcndt57s%2Bccbn4DC2XMMeRXvsol"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 708c7d4feb146dd7-MIA
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Devan-Seaworth-3913","title":"Devan Seaworth","description":"Yunkai","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2022-05-09T18:27:29.604Z","updatedAt":"2022-05-09T18:27:29.604Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Archibald-Yronwood-3913","title":"Archibald Yronwood","description":"Qarth","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":[],"createdAt":"2022-05-09T18:26:06.754Z","updatedAt":"2022-05-09T18:26:06.754Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Shyra-3913","title":"Shyra","description":"Ny Sar","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2022-04-25T18:55:05.648Z","updatedAt":"2022-04-25T18:55:05.648Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Formacion-Karate-Equipo2-3913","title":"Formacion Karate Equipo2","description":"Karate Qv","body":"blablablbalbalbalblabaa","tagList":["Test","karate","Test2","Formacion"],"createdAt":"2022-03-14T18:38:26.236Z","updatedAt":"2022-03-14T18:38:26.236Z","favorited":true,"favoritesCount":1,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Create-a-new-implementation-1","title":"Create a new implementation","description":"join the community by creating a new implementation","body":"Share your knowledge and enpower the community by creating a new implementation","tagList":["implementations"],"createdAt":"2021-11-24T12:11:08.212Z","updatedAt":"2021-11-24T12:11:08.212Z","favorited":false,"favoritesCount":2205,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Explore-implementations-1","title":"Explore implementations","description":"discover the implementations created by the RealWorld community","body":"Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.","tagList":["codebaseShow","implementations"],"createdAt":"2021-11-24T12:11:07.952Z","updatedAt":"2021-11-24T12:11:07.952Z","favorited":false,"favoritesCount":1333,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Welcome-to-RealWorld-project-1","title":"Welcome to RealWorld project","description":"Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more","body":"See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec","tagList":["welcome","introduction"],"createdAt":"2021-11-24T12:11:07.557Z","updatedAt":"2021-11-24T12:11:07.557Z","favorited":false,"favoritesCount":906,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}}],"articlesCount":7}
+13:27:30.256 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.realworld.io/api/articles/Devan-Seaworth-3913
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTIxMjA4NDgsImV4cCI6MTY1NzMwNDg0OH0.4T-W_Jp0E9bv3_4Nv23Ew22hno9AC7iDvMEKeWq6vBU
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+3 > Accept-Encoding: gzip,deflate
+
+
+13:27:30.531 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 275
+3 < 204
+3 < Date: Mon, 09 May 2022 18:27:30 GMT
+3 < Content-Length: 0
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cRpEhu7913DiPbHCtpjjQB16NCDQagEQKfS8tQXw7HiFj1pYuf59IWr4VHHOVTm3aWy%2FR1HvPX0%2FIYqqt3fMQE8gwCBbbtaSm%2FN%2BAFVRVlts4wv1u7Z%2FuvU%2Bd1JEa%2BZN4Deu"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 708c7d537f186dd9-MIA
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+13:27:30.541 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphcnYwNzhAZ21haWwuY29tIiwidXNlcm5hbWUiOiJqb2hhbnRlc3QiLCJpYXQiOjE2NTIxMjA4NDgsImV4cCI6MTY1NzMwNDg0OH0.4T-W_Jp0E9bv3_4Nv23Ew22hno9AC7iDvMEKeWq6vBU
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+4 > Accept-Encoding: gzip,deflate
+
+
+13:27:31.089 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 548
+4 < 200
+4 < Date: Mon, 09 May 2022 18:27:31 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"bc8-IG6pTnn4X9G5bxe7UfMSWOOLlFg"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NvjVA1ikQpqshbA3pACkP8lRAJ5d3LNO3I54Pca56ueJ%2Bd30r5CGba8DGPopLj7Vp21V75t8j6YA7aqxWMHJJ4xj4zfrs7xjTbZ6TEm5Bjipm%2FBSjZ40pvxIr45Yzdk%2By%2F%2Fm"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 708c7d553f640306-MIA
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Archibald-Yronwood-3913","title":"Archibald Yronwood","description":"Qarth","body":"Never forget who you are. The rest of the world won't. Wear it like an armor and it can never be used against you.","tagList":[],"createdAt":"2022-05-09T18:26:06.754Z","updatedAt":"2022-05-09T18:26:06.754Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Shyra-3913","title":"Shyra","description":"Ny Sar","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2022-04-25T18:55:05.648Z","updatedAt":"2022-04-25T18:55:05.648Z","favorited":false,"favoritesCount":0,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Formacion-Karate-Equipo2-3913","title":"Formacion Karate Equipo2","description":"Karate Qv","body":"blablablbalbalbalblabaa","tagList":["Test","karate","Test2","Formacion"],"createdAt":"2022-03-14T18:38:26.236Z","updatedAt":"2022-03-14T18:38:26.236Z","favorited":true,"favoritesCount":1,"author":{"username":"johantest","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Create-a-new-implementation-1","title":"Create a new implementation","description":"join the community by creating a new implementation","body":"Share your knowledge and enpower the community by creating a new implementation","tagList":["implementations"],"createdAt":"2021-11-24T12:11:08.212Z","updatedAt":"2021-11-24T12:11:08.212Z","favorited":false,"favoritesCount":2205,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Explore-implementations-1","title":"Explore implementations","description":"discover the implementations created by the RealWorld community","body":"Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.","tagList":["codebaseShow","implementations"],"createdAt":"2021-11-24T12:11:07.952Z","updatedAt":"2021-11-24T12:11:07.952Z","favorited":false,"favoritesCount":1333,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Welcome-to-RealWorld-project-1","title":"Welcome to RealWorld project","description":"Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more","body":"See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec","tagList":["welcome","introduction"],"createdAt":"2021-11-24T12:11:07.557Z","updatedAt":"2021-11-24T12:11:07.557Z","favorited":false,"favoritesCount":906,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}}],"articlesCount":6}
+13:27:32.740 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/features/Articles.feature

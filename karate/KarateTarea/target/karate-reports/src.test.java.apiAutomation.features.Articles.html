@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.apiAutomation.features.Articles</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-01-04 04:34:49 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[2:124]"><span>[2:124]</span> <span>Comment articles</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/apiAutomation/features/Articles.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">favoritos</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:124]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:124]</span>
+                <span class="scenario-name">Comment articles</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4793</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:124]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:124]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref bg-step">3</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">16:34:44.779 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:124]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenResponse = callonce read(&#39;classpath:helpers/createToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3247</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:34:48.231 &lt;&lt; lock released, cached callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToken</div>
+      </div>
+      <div class="time-cell passed">3119</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.3">
+      <div class="step-ref bg-step">3</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.3">16:34:45.032 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">244</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4.0.call.0.5">{
+&quot;user&quot;: {
+  &quot;email&quot;: &quot;#(userEmail)&quot;,
+  &quot;password&quot;: &quot;#(userPassword)&quot;
+}
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2841</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.14">16:34:46.617 request:
+1 &gt; POST https://api.realworld.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 62
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;testjohan@test.com&quot;,&quot;password&quot;:&quot;karate123&quot;}}
+
+16:34:48.183 response time in milliseconds: 1552
+1 &lt; 200
+1 &lt; Date: Tue, 04 Jan 2022 21:34:48 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;1ea-olpKSm+vFMs8rxQ/N9jswu29pQw&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=mDmuX%2BuikqrQ%2FTBAmN3eEp0KjzEh%2FcxWqVUPkRUajfD3z%2BSZuBj2hE6ejrZnqrfZDluL64sJKyPGu3sDstxe%2FqIy1oOvS1JH9Ef%2Bv%2BYbc8iPj4eF%2BjbCLRfiEkbFjcOTOPzz&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6c8797ce7af1129b-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;testjohan@test.com&quot;,&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:null,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Rqb2hhbkB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiam9oYW50ZXN0MiIsInBhc3N3b3JkIjoiJDJhJDEwJGxMNHdyNkoxZzdFWVFlOVRSZ2R1MnVEeVhPLnI3YlphZUZkV0hKcHZpRndMWUd0QjNpQnFXIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDEzMzIwODgsImV4cCI6MTY0NjUxNjA4OH0.L4x2H7m9cgyNdg6Ilw7n4xGTiJTZevz8sCd5ehAM61Q&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.16">16:34:48.213 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Rqb2hhbkB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiam9oYW50ZXN0MiIsInBhc3N3b3JkIjoiJDJhJDEwJGxMNHdyNkoxZzdFWVFlOVRSZ2R1MnVEeVhPLnI3YlphZUZkV0hKcHZpRndMWUd0QjNpQnFXIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDEzMzIwODgsImV4cCI6MTY0NjUxNjA4OH0.L4x2H7m9cgyNdg6Ilw7n4xGTiJTZevz8sCd5ehAM61Q 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.user.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:124]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenResponse.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:124]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timevalidator = read (&#39;classpath:helpers/time-validator.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Step 1: Get atricles of the global feed</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;articles&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params  {limit:10,offset:0}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">747</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.130">16:34:48.355 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Rqb2hhbkB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiam9oYW50ZXN0MiIsInBhc3N3b3JkIjoiJDJhJDEwJGxMNHdyNkoxZzdFWVFlOVRSZ2R1MnVEeVhPLnI3YlphZUZkV0hKcHZpRndMWUd0QjNpQnFXIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDEzMzIwODgsImV4cCI6MTY0NjUxNjA4OH0.L4x2H7m9cgyNdg6Ilw7n4xGTiJTZevz8sCd5ehAM61Q
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:34:49.089 response time in milliseconds: 726
+1 &lt; 200
+1 &lt; Date: Tue, 04 Jan 2022 21:34:49 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;12c6-5nhNKCnA2MVUtlCMhr9/YBIxORU&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=hwdzAmQUWDTyInVv79B48qW6OWDlsAB52TQNgaVB%2BazW%2BJMzfuNdwRCpQXiC0mkaWzQ82ca2XCOkv8a18f5g%2BCEb0QGKwkNpzuWyZk9M59BmlrvJ5BL1%2F9sgo%2FcSqz5%2BbBcq&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 6c8797d48edf21f4-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Some-old-wounds-never-truly-heal-and-bleed-again-at-the-slightest-word.-4029&quot;,&quot;title&quot;:&quot;Some old wounds never truly heal, and bleed again at the slightest word.&quot;,&quot;description&quot;:&quot;test Article delete&quot;,&quot;body&quot;:&quot;aca va  algo&quot;,&quot;createdAt&quot;:&quot;2021-12-28T21:02:59.947Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-28T21:02:59.947Z&quot;,&quot;tagList&quot;:[],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;titulo-7-4029&quot;,&quot;title&quot;:&quot;titulo 7&quot;,&quot;description&quot;:&quot;test Article 6&quot;,&quot;body&quot;:&quot;hbvjahvjhsdkndienlknlnswlkns \nkjbskjbksjn\nkjbskjbskjbkjsbkjbk&quot;,&quot;createdAt&quot;:&quot;2021-12-14T23:15:00.836Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T23:15:00.836Z&quot;,&quot;tagList&quot;:[],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;titulo-6-4029&quot;,&quot;title&quot;:&quot;titulo 6&quot;,&quot;description&quot;:&quot;test Article 6&quot;,&quot;body&quot;:&quot;hbvjahvjhsdkndienlknlnswlkns \nkjbskjbksjn\nkjbskjbskjbkjsbkjbk&quot;,&quot;createdAt&quot;:&quot;2021-12-14T19:38:04.424Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T19:38:04.424Z&quot;,&quot;tagList&quot;:[],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;titulo-5-4029&quot;,&quot;title&quot;:&quot;titulo 5&quot;,&quot;description&quot;:&quot;test Article 5&quot;,&quot;body&quot;:&quot;hbvjahvjhsdkndienlknlnswlkns \nkjbskjbksjn\nkjbskjbskjbkjsbkjbk&quot;,&quot;createdAt&quot;:&quot;2021-12-14T19:36:39.002Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T19:36:39.002Z&quot;,&quot;tagList&quot;:[],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;titulo-1-4029&quot;,&quot;title&quot;:&quot;titulo 1&quot;,&quot;description&quot;:&quot;test Article 4&quot;,&quot;body&quot;:&quot;hbvjahvjhsdkndienlknlnswlkns \nkjbskjbksjn\nkjbskjbskjbkjsbkjbk&quot;,&quot;createdAt&quot;:&quot;2021-12-14T16:12:23.622Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T16:12:23.622Z&quot;,&quot;tagList&quot;:[&quot;test&quot;,&quot;test1&quot;,&quot;test2&quot;,&quot;prueba1&quot;,&quot;prueba&quot;,&quot;prueba2&quot;,&quot;article2&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;Article-3-4029&quot;,&quot;title&quot;:&quot;Article 3&quot;,&quot;description&quot;:&quot;test Article 23&quot;,&quot;body&quot;:&quot;hbvjahvjhsdkndienlknlnswlkns \nkjbskjbksjn\nkjbskjbskjbkjsbkjbk&quot;,&quot;createdAt&quot;:&quot;2021-12-14T15:42:48.694Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T15:42:48.694Z&quot;,&quot;tagList&quot;:[&quot;test1&quot;,&quot;test3&quot;,&quot;prueba1&quot;,&quot;prueba2&quot;,&quot;article2&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;Article-new-test-1-4029&quot;,&quot;title&quot;:&quot;Article new test 1&quot;,&quot;description&quot;:&quot;test 1&quot;,&quot;body&quot;:&quot;this is a new article 1 test 1 prueba testing probando &quot;,&quot;createdAt&quot;:&quot;2021-12-14T14:28:49.538Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-14T14:28:49.538Z&quot;,&quot;tagList&quot;:[&quot;test&quot;,&quot;test1&quot;,&quot;testing&quot;,&quot;prueba1&quot;,&quot;article1&quot;,&quot;prueba&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:0,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;Create-a-new-implementation-1&quot;,&quot;title&quot;:&quot;Create a new implementation&quot;,&quot;description&quot;:&quot;join the community by creating a new implementation&quot;,&quot;body&quot;:&quot;Share your knowledge and enpower the community by creating a new implementation&quot;,&quot;createdAt&quot;:&quot;2021-11-24T12:11:08.212Z&quot;,&quot;updatedAt&quot;:&quot;2021-11-24T12:11:08.212Z&quot;,&quot;tagList&quot;:[&quot;implementations&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;Gerome&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/demo-avatar.png&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:645,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;Explore-implementations-1&quot;,&quot;title&quot;:&quot;Explore implementations&quot;,&quot;description&quot;:&quot;discover the implementations created by the RealWorld community&quot;,&quot;body&quot;:&quot;Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.&quot;,&quot;createdAt&quot;:&quot;2021-11-24T12:11:07.952Z&quot;,&quot;updatedAt&quot;:&quot;2021-11-24T12:11:07.952Z&quot;,&quot;tagList&quot;:[&quot;codebaseShow&quot;,&quot;implementations&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;Gerome&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/demo-avatar.png&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:410,&quot;favorited&quot;:false},{&quot;slug&quot;:&quot;Welcome-to-RealWorld-project-1&quot;,&quot;title&quot;:&quot;Welcome to RealWorld project&quot;,&quot;description&quot;:&quot;Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more&quot;,&quot;body&quot;:&quot;See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec&quot;,&quot;createdAt&quot;:&quot;2021-11-24T12:11:07.557Z&quot;,&quot;updatedAt&quot;:&quot;2021-11-24T12:11:07.557Z&quot;,&quot;tagList&quot;:[&quot;welcome&quot;,&quot;introduction&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;Gerome&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/demo-avatar.png&quot;,&quot;following&quot;:false},&quot;favoritesCount&quot;:262,&quot;favorited&quot;:false}],&quot;articlesCount&quot;:10}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Step 2: Get the slug ID for the first arice, save it to variable</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def slug = response.articles[0].slug</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Step 3: Make a GET call to &#39;comments&#39; end-point to get all comments</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.137">
+      <div class="step-ref passed">137</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path  &#39;articles/&#39;+slug+&#39;/comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &#39;Token &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">535</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.139">16:34:49.140 request:
+2 &gt; GET https://api.realworld.io/api/articles/Some-old-wounds-never-truly-heal-and-bleed-again-at-the-slightest-word.-4029/comments
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Rqb2hhbkB0ZXN0LmNvbSIsInVzZXJuYW1lIjoiam9oYW50ZXN0MiIsInBhc3N3b3JkIjoiJDJhJDEwJGxMNHdyNkoxZzdFWVFlOVRSZ2R1MnVEeVhPLnI3YlphZUZkV0hKcHZpRndMWUd0QjNpQnFXIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2NDEzMzIwODgsImV4cCI6MTY0NjUxNjA4OH0.L4x2H7m9cgyNdg6Ilw7n4xGTiJTZevz8sCd5ehAM61Q
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:34:49.664 response time in milliseconds: 523
+2 &lt; 200
+2 &lt; Date: Tue, 04 Jan 2022 21:34:49 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; x-powered-by: Express
+2 &lt; access-control-allow-origin: *
+2 &lt; etag: W/&quot;1ff-XYuwFhAZeH53CkaoV4d9OaMQTrQ&quot;
+2 &lt; via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=hdv%2FBGdpTy1gUwOFjUDah%2B3Myf2Q4DPy5TKIdQxU4muoF%2BAI4vkS4gGjr8c8OHZ4QL7TXBBbA4%2F6tzdhChIaPru%2Fa2r8FoatqXT9JNNnHD6uajg56rv%2FZGnWmXrly3XhsP3h&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 6c8797d90a53cedc-IAD
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-27=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[{&quot;id&quot;:2574,&quot;createdAt&quot;:&quot;2021-12-30T20:27:15.106Z&quot;,&quot;updatedAt&quot;:&quot;2021-12-30T20:27:15.106Z&quot;,&quot;body&quot;:&quot;hola esto es un comentario&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;id&quot;:2712,&quot;createdAt&quot;:&quot;2022-01-04T20:48:52.500Z&quot;,&quot;updatedAt&quot;:&quot;2022-01-04T20:48:52.500Z&quot;,&quot;body&quot;:&quot;hola segundo comentario&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;johantest2&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Step 4: Verify response schema</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">100</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.141">{
+    &quot;comments&quot;: [
+        {
+            &quot;id&quot;: &quot;#number&quot;,
+            &quot;createdAt&quot;: &quot;#? timevalidator(_)&quot;,
+            &quot;updatedAt&quot;: &quot;#? timevalidator(_)&quot;,
+            &quot;body&quot;: &quot;#string&quot;,
+            &quot;author&quot;: {
+                &quot;username&quot;: &quot;#string&quot;,
+                &quot;bio&quot;: &quot;##string&quot;,
+                &quot;image&quot;: &quot;#string&quot;,
+                &quot;following&quot;: &quot;#boolean&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;#number&quot;,
+            &quot;createdAt&quot;: &quot;#? timevalidator(_)&quot;,
+            &quot;updatedAt&quot;: &quot;#? timevalidator(_)&quot;,
+            &quot;body&quot;: &quot;#string&quot;,
+            &quot;author&quot;: {
+                &quot;username&quot;: &quot;#string&quot;,
+                &quot;bio&quot;: &quot;##string&quot;,
+                &quot;image&quot;: &quot;#string&quot;,
+                &quot;following&quot;: &quot;#boolean&quot;
+            }
+        }
+    ]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Step 5: Get the count of the comments array lentgh and save to variable</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.173">
+      <div class="step-ref passed">173</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def articlesCount = karate.sizeOf(response.comments)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.174">
+      <div class="step-ref passed">174</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print articlesCount</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.174">16:34:49.783 [print] 2 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

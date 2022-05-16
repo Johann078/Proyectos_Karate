@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"tests\/TestPost[1:10]","start":1639170741673,"end":1639170742195,"title":"tests\/TestPost[1:10] 16:12:21.673-16:12:22.195 Post  1"},{"id":2,"group":1,"content":"tests\/TestPost[2:19]","start":1639170742200,"end":1639170742783,"title":"tests\/TestPost[2:19] 16:12:22.200-16:12:22.783 Post 2"},{"id":3,"group":1,"content":"tests\/TestPost[3:27]","start":1639170742788,"end":1639170744617,"title":"tests\/TestPost[3:27] 16:12:22.788-16:12:24.617 Post 3"},{"id":4,"group":1,"content":"tests\/TestPost[4:37]","start":1639170744620,"end":1639170745827,"title":"tests\/TestPost[4:37] 16:12:24.620-16:12:25.827 Post 4"},{"id":5,"group":1,"content":"tests\/TestGet[1:8]","start":1639170738329,"end":1639170739672,"title":"tests\/TestGet[1:8] 16:12:18.329-16:12:19.672 Test sample Get 1"},{"id":6,"group":1,"content":"tests\/TestGet[2:15]","start":1639170739681,"end":1639170740323,"title":"tests\/TestGet[2:15] 16:12:19.681-16:12:20.323 Test sample Get 2"},{"id":7,"group":1,"content":"tests\/TestGet[3:21]","start":1639170740330,"end":1639170740548,"title":"tests\/TestGet[3:21] 16:12:20.330-16:12:20.548 Test sample Get 3"},{"id":8,"group":1,"content":"tests\/TestGet[4:28]","start":1639170740554,"end":1639170740807,"title":"tests\/TestGet[4:28] 16:12:20.554-16:12:20.807 Test sample Get 4"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+11:09:48.626 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.1.0
+11:09:49.041 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:09:49.082 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39
+11:09:50.937 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:52.321 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"alfonzo97@test.com","password":"karate123","username":"karateUser123"}}
+
+11:09:53.039 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 714
+1 < 422
+1 < Date: Mon, 17 Jan 2022 16:09:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ifFPFC6dp0JVmUKERnxzeJ8AEnhiC8%2F2wdcIJvPAoM8KohJt4JU1ACpGSrdDmq22KlxECIcbyIGt8GBueZSN1cVc5Q5FqgXWvQQKffqXutsTbqSAf%2FiXsRBA3hDtfd4%2FlFVT"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6cf0d9ba58f0572a-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+11:09:53.088 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39
+11:09:53.121 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:53.345 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"karateUser1@test.com","password":"karate123","username":"terrell.wyman"}}
+
+11:09:53.656 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 310
+1 < 422
+1 < Date: Mon, 17 Jan 2022 16:09:53 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oEzz9Z14HEPkG2H2YaB%2FwLK9U8tAIhB2NpJz2Tl2mUdSobEqux64u5ghHQajaZ8MFQSWJi375CSwbL2MJ9bkFFIH16XXulSGRRPARhcwqmXfG%2BxbUhbrKRKk5zvbo3UWmlUk"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6cf0d9be68ce8da2-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+11:09:53.660 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39
+11:09:53.673 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:53.893 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"","password":"karate123","username":"tatum.braun"}}
+
+11:09:54.202 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 307
+1 < 422
+1 < Date: Mon, 17 Jan 2022 16:09:54 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 39
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"27-t1Jmbh6zWQl9abIACseOZh9CIII"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HdJnsW1bTSld%2FV0vEWeWHGIwPnTr2x2XsT0avOgkeXjFib%2BtzozO7w7G8YP%2BxJ0aZXrakR9D%2FHktmcySwoFtBj%2Fru2GnpjqYe88acyEFJcWsz6m3%2F55wWFH0vjoBis6vnmv6"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6cf0d9c1b80b3709-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"email":["can't be blank"]}}
+11:09:54.206 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39
+11:09:54.232 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:54.653 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"porsha75@test.com","password":"","username":"sudie.fadel"}}
+
+11:09:54.969 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 315
+1 < 422
+1 < Date: Mon, 17 Jan 2022 16:09:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"2a-qbpXJMY/Kgu11LsJcjS0p5wC5b0"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tmvlv3IRLLnqCJJpivSRZi0dYzbSVCuN73W18CKdW%2F%2FhNSOS4%2FQxGAvEKYRTPSzoGqw98n%2BWlAdm9BZZ4KbVk2kZbfjH%2BqH%2FhfxI1wzs%2B7SXcWNIjuZy1RB3oY9j6p8tCnli"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6cf0d9c698b721f1-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"errors":{"password":["can't be blank"]}}
+11:09:54.973 [com.intuit.karate.cli.Main.main()] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39
+11:09:54.988 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:55.122 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 77
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"annalee100@test.com","password":"karate123","username":""}}
+
+11:09:55.464 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 341
+1 < 422
+1 < Date: Mon, 17 Jan 2022 16:09:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < access-control-allow-origin: *
+1 < etag: W/"2a-AIsgLw77Dx1RWMepi6jZReyj6jg"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5OQCqsw%2FnabAQ%2BMCNZ5bEn2S%2B6TCJkcOLTP0msAlqbMpYU2%2F2MPDOLUREtYXR2NhkyJHzSKfsCG691oOoovrWa13KZmuetqXdpnXGuR5MaucHfATQIx3GyWaiATC1egq3ihA"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6cf0d9c9bf3f09e6-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"username":["can't be blank"]}}
+11:09:57.296 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/features/singUp.feature

@@ -1,0 +1,32 @@
+07:54:02.244 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.1.0
+07:54:02.453 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:54:03.698 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+07:54:04.245 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 84
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"randi52@test.com","password":"qweert","username":"ingeborg.veum"}}
+
+07:54:04.890 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 643
+1 < 200
+1 < Date: Thu, 12 May 2022 12:54:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15a-tCrJ0NQ1Fudfeap73qKhY9V9xbM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KkMwt0GHjRTESkCn5l5LWJKv3sni1PNqDVNaekbUw%2BSHzLZ1PnEx6%2Fr3NOCnYGPahzLPgqoTrlJi%2FSrFCwonIIJvUXFyEOsMAYAym4nFjBPkr3Hbr9m8p3Jx6h3YHseHFAzn"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 70a34d088a3c6da3-MIA
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"randi52@test.com","username":"ingeborg.veum","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRpNTJAdGVzdC5jb20iLCJ1c2VybmFtZSI6ImluZ2Vib3JnLnZldW0iLCJpYXQiOjE2NTIzNjAwNDUsImV4cCI6MTY1NzU0NDA0NX0.0RDUf0bm6-vta1EuSHyWCkB1MTfl3w7q-vwOxlyoVtk"}}
+07:54:05.391 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/conduitApp/features/SingUp.feature
